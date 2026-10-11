@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Uravnenie {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        long a = scanner.nextLong();
+        long b = scanner.nextLong();
+
+        if (a == 0) {
+            System.out.println(b == 0 ? "INF" : "NO");
+        } else if (b % a != 0) {
+            System.out.println("NO");
+        } else {
+            System.out.println(-b / a);
+        }
+    }
+}
